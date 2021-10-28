@@ -1,0 +1,110 @@
+<h2>Collage de imagenes</h2>
+
+<div class="grid-container" style="width: 600px">
+  <div class="primera" onclick="alert('Se borrará la primera imagen')"><a href="/deleteImg/imagen-1.jpg">1</a></div>
+  <div class="segunda" onclick="alert('Se borrará la segunda imagen')"><a href="/deleteImg/imagen-2.jpg">2</a></div>
+  <div class="tercera" onclick="alert('Se borrará la tercera imagen')"><a href="/deleteImg/imagen-3.jpg">3</a></div>
+  <div class="cuarta" onclick="alert('Se borrará la cuarta imagen')"><a href="/deleteImg/imagen-4.jpg">4</a></div>
+  <div class="quinta" onclick="alert('Se borrará la quinta imagen')"><a href="/deleteImg/imagen-5.jpg">5</a></div>
+  <div class="sexta" onclick="alert('Se borrará la sexta imagen')"><a href="/deleteImg/imagen-6.jpg">6</a></div>
+  <div class="septima" onclick="alert('Se borrará la septima imagen')"><a href="/deleteImg/imagen-7.jpg">7</a></div>
+  <div class="octava" onclick="alert('Se borrará la octava imagen')"><a href="/deleteImg/imagen-8.jpg">8</a></div>
+</div>
+<br />
+<a href="/"><button>Subir nueva imagen</button></a>
+<style>
+  body {
+    background-color: rgb(151, 4, 19);
+    color: rgb(76, 235, 13);
+    text-align: center;
+    padding: 10px;
+  }
+  .primera {
+    grid-area: primera;
+  }
+  .segunda {
+    grid-area: segunda;
+  }
+
+  .tercera {
+    grid-area: tercera;
+  }
+
+  .cuarta {
+    grid-area: cuarta;
+  }
+
+  .quinta {
+    grid-area: quinta;
+  }
+
+  .sexta {
+    grid-area: sexta;
+  }
+
+  .septima {
+    grid-area: septima;
+  }
+
+  .octava {
+    grid-area: octava;
+  }
+
+  .grid-container {
+    margin: auto;
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-areas:
+      "primera segunda segunda"
+      "primera tercera cuarta"
+      "quinta quinta cuarta"
+      "sexta septima octava";
+    grid-gap: 5px;
+    text-shadow: 1px 1px 1px black;
+    padding: 5px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(104, 143, 91, 0.8);
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+  }
+
+  .grid-container div {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container div:nth-child(1) {
+    background-image: url(imgs/imagen-1.jpg);
+  }
+  .grid-container div:nth-child(2) {
+    background-image: url(imgs/imagen-2.jpg);
+  }
+  .grid-container div:nth-child(3) {
+    background-image: url(imgs/imagen-3.jpg);
+  }
+  .grid-container div:nth-child(4) {
+    background-image: url(imgs/imagen-4.jpg);
+  }
+  .grid-container div:nth-child(5) {
+    background-image: url(imgs/imagen-5.jpg);
+  }
+  .grid-container div:nth-child(6) {
+    background-image: url(imgs/imagen-6.jpg);
+  }
+  .grid-container div:nth-child(7) {
+    background-image: url(imgs/imagen-7.jpg);
+  }
+  .grid-container div:nth-child(8) {
+    background-image: url(imgs/imagen-8.jpg);
+  }
+
+  a {
+    color: rgb(248, 179, 5);
+    text-decoration: none;
+  }
+</style>
